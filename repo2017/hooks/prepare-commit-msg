@@ -1,0 +1,99 @@
+#!/bin/bash
+exec < /dev/tty
+unset SELECT_MENU_CHOICES
+MSG="$1"
+
+function choose_type()
+{
+  local conftype=$1
+  local selection=${SELECT_MENU_CHOICES[0]}
+  local answer
+  
+  read -p "Which would you like ? [$selection]: " answer
+  echo ""
+  if [ "$answer" ]; then
+    local c
+    for c in ${SELECT_MENU_CHOICES[@]} ; do
+      selection=$(echo "$c" | grep -i "\b$answer\b")
+      if [ "$selection" ]; then
+        break
+      fi
+    done
+  fi
+  [ -z "$selection" ] && selection=${SELECT_MENU_CHOICES[0]}
+  display=${selection##*.}
+}
+
+function add_combo()
+{
+  local new_combo="$1"
+  SELECT_MENU_CHOICES=(${SELECT_MENU_CHOICES[@]} "$new_combo")
+}
+
+function commit_template() 
+{
+  if [ -d ".git/hooks/config" ]; then
+    T="$MSG.tmp.$$"
+    echo -n >$T
+    for conf_file in $(ls .git/hooks/config/1_*)
+    do
+      if (grep -q -e "${conf_file#*_}" $MSG)
+      then
+        continue
+      else
+        unset SELECT_MENU_CHOICES
+        filename=$conf_file
+        cat $filename
+        while read line
+        do
+          if (echo $line | grep -q -e "^[1-9].*$")
+          then
+            add_combo "$line"
+          fi
+        done < $filename
+        choose_type ${conf_file#*_}
+        display1=${display}
+        second_selection=".git/hooks/config/2_${display1}"
+        if [ -f $second_selection ]; then
+          unset SELECT_MENU_CHOICES
+          filename2=$second_selection
+          cat $second_selection
+          while read line
+          do
+            if (echo $line | grep -q -e "^[1-9].*$")
+            then
+              add_combo "$line"
+            fi
+          done < $filename2
+          choose_type ${second_selection#*_}
+          display2=${display}
+          echo "[${conf_file#*_} ] $display1 --> $display2" >> $T
+        else
+          echo "[${conf_file#*_} ] $display1" >> $T
+        fi
+      fi
+    done
+    line=$(wc -l $MSG|cut -d" " -f1)
+    if (grep -q -e "# Please enter the commit message" $MSG)
+    then
+        line=$(grep -n "# Please enter the commit message" $MSG |tail -1 |cut -d":" -f1)
+    elif (grep -q -e "Change-Id:" $MSG)
+    then
+        line=$(grep -n "Change-Id:" $MSG|tail -1 |cut -d":" -f1)
+    fi
+    line=$(expr $line - 1)
+    sed -i "$line{r $T
+    ;N}" $MSG
+    rm $T
+  fi
+}
+
+case "$2" in
+  message|template)
+    commit_template
+    ;;
+  *)
+    ;;
+esac
+
+
