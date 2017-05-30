@@ -3,7 +3,7 @@
 ## repo default configuration
 ##
 #REPO_URL = 'https://gerrit.googlesource.com/git-repo'
-REPO_URL = 'https@github.com:jinyuangithub/sprdrepo.git'
+REPO_URL = 'git://github.com/jinyuangithub/sprdrepo.git'
 REPO_REV = 'stable'
 
 # Copyright (C) 2008 Google Inc.
