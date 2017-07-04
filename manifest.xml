@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch=".." name="korg" review="http://review.source.spreadtrum.com/gerrit/"/>
+  <default remote="korg" revision="sprdroid7.0_trunk_k44_17b" sync-j="4"/>
+  
+  
+  <project groups="device,sprd" name="chipram" />
+  <project groups="device,fugu,broadcom_pdk" name="device/asus/fugu" />
+  <project clone-depth="1" groups="device,fugu,broadcom_pdk" name="device/asus/fugu-kernel" />
+  <project groups="pdk-cw-fs,pdk-fs" name="device/common" />
+  <project groups="pdk" name="device/generic/arm64" />
+  <project groups="pdk" name="device/generic/armv7-a-neon" />
+  <project groups="pdk" name="device/generic/common" />
+  <project groups="pdk" name="device/generic/goldfish" />
+  <project groups="pdk" name="device/generic/mini-emulator-arm64" />
+  <project groups="pdk" name="device/generic/mini-emulator-armv7-a-neon" />
+  <project groups="pdk" name="device/generic/mini-emulator-mips" />
+  <project groups="pdk" name="device/generic/mini-emulator-mips64" />
+  <project groups="pdk" name="device/generic/mini-emulator-x86" />
+  <project groups="pdk" name="device/generic/mini-emulator-x86_64" />
+  <project groups="pdk" name="device/generic/mips" />
+  <project groups="pdk" name="device/generic/mips64" />
+  <project name="device/generic/qemu" />
+  <project groups="pdk" name="device/generic/x86" />
+  <project groups="pdk" name="device/generic/x86_64" />
+  <project groups="device" name="device/google/accessory/arduino" />
+  <project groups="device" name="device/google/accessory/demokit" />
+  <project groups="device,fugu,broadcom_pdk,generic_fs" name="device/google/atv" />
+  <project groups="device" name="device/google/contexthub" />
+  <project groups="device,dragon" name="device/google/dragon" />
+  <project clone-depth="1" groups="device,dragon" name="device/google/dragon-kernel" />
+  <project groups="device,flounder,broadcom_pdk" name="device/htc/flounder" />
+  <project clone-depth="1" groups="device,flounder,broadcom_pdk" name="device/htc/flounder-kernel" />
+  <project groups="device,angler,broadcom_pdk" name="device/huawei/angler" />
+  <project groups="device,angler,broadcom_pdk" name="device/huawei/angler-kernel" />
+  <project groups="device" name="device/intel/edison" />
+  <project groups="device,bullhead" name="device/lge/bullhead" />
+  <project groups="device,bullhead" name="device/lge/bullhead-kernel" />
+  <project name="device/linaro/hikey" />
+  <project name="device/linaro/hikey-kernel" />
+  <project groups="device,shamu,broadcom_pdk" name="device/moto/shamu" />
+  <project clone-depth="1" groups="device,shamu,broadcom_pdk" name="device/moto/shamu-kernel" />
+  <project groups="pdk" name="device/sample" />
+  <project groups="device,sprd,idhdel" name="device/sprd/isharkl2" />
+  <project groups="device,sprd,idhdel" name="device/sprd/iwhale2" />
+  <project groups="device,sprd,idhdel" name="device/sprd/pike2" />
+  <project groups="device,sprd,idhdel" name="device/sprd/scx20" />
+  <project groups="device,sprd,idhdel" name="device/sprd/scx35" />
+  <project groups="device,sprd,idhdel" name="device/sprd/scx35l" />
+  <project groups="device,sprd,idhdel" name="device/sprd/sharkl2" />
+  <project groups="device,sprd,idhdel" name="device/sprd/sharkle" />
+  <project groups="device,sprd,idhdel" name="device/sprd/sharklj1" />
+  <project groups="device,sprd,idhdel" name="device/sprd/whale2" />
+  <project groups="sprd,sprd_intel" name="intel_android/device/intel/houdini" path="vendor/intel/houdini" />
+  <project groups="sprd,sprd_intel" name="intel_android/hardware/intel/libmintel" path="vendor/intel/external/libmintel" />
+  <project groups="sprd,sprd_intel" name="intel_android/prebuilts/intel_imin" path="prebuilts/intel" />
+  <project groups="sprd,sprd_intel" name="intel_android/vendor/intel/art-extension" path="vendor/intel/art-extension" />
+  <project groups="sprd,sprd_intel" name="intel_android/vendor/intel/external/libjpeg-turbo" path="vendor/intel/external/libjpeg-turbo" />
+  <project groups="sprd,sprd_intel" name="intel_android/vendor/intel/external/libmediaparser" path="vendor/intel/external/libmediaparser" />
+  <project groups="sprd,sprd_intel" name="intel_android/vendor/intel/external/mediasdk_release" path="vendor/intel/external/mediasdk_release" />
+  <project groups="sprd,sprd_intel" name="intel_android/vendor/intel/tool/sep" path="vendor/intel/tool/sep" />
+  <project groups="sprd,sprd_intel" name="intel_android/vendor/intel/tool/socwatch" path="vendor/intel/tool/socwatch" />
+  <project groups="sprd,sprd_intel" name="intel_security/build" path="bootcore/build" />
+  <project groups="sprd,sprd_intel" name="intel_security/external/3p_threadx" path="bootcore/external/3p_threadx" />
+  <project groups="sprd,sprd_intel" name="intel_security/external/3p_threadx_x86" path="bootcore/external/3p_threadx_x86" />
+  <project groups="sprd,sprd_intel" name="intel_security/mobilevisor/core" path="bootcore/mobilevisor/core" />
+  <project groups="sprd,sprd_intel" name="intel_security/mobilevisor/pal" path="bootcore/mobilevisor/services" />
+  <project groups="sprd,sprd_intel" name="intel_security/mobilevisor/products" path="bootcore/mobilevisor/products" />
+  <project groups="sprd,sprd_intel" name="intel_security/mobilevisor/release" path="bootcore/mobilevisor/release" />
+  <project groups="sprd,sprd_intel" name="intel_security/secure_vm" path="bootcore/secure_vm" />
+  <project groups="sprd,sprd_intel" name="intel_security/soclib" path="bootcore/soclib" />
+  <project groups="device,sprd" name="kernel/common" path="kernel" />
+  <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" />
+  <project groups="pdk" name="platform/art" path="art" />
+  <project groups="pdk" name="platform/bionic" path="bionic" />
+  <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" />
+  <project groups="pdk,tradefed" name="platform/build" path="build" >
+    <copyfile dest="Makefile" src="core/root.mk"/>
+  </project>
+  <project groups="pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" />
+  <project groups="pdk,tradefed" name="platform/build/kati" path="build/kati" />
+  <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong" >
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project groups="cts,pdk-cw-fs,pdk-fs" name="platform/cts" path="cts" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/dalvik" path="dalvik" />
+  <project name="platform/developers/build" path="developers/build" />
+  <project name="platform/developers/demos" path="developers/demos" />
+  <project name="platform/developers/samples/android" path="developers/samples/android" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/development" path="development" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/docs/source.android.com" path="docs/source.android.com" />
+  <project groups="pdk" name="platform/external/aac" path="external/aac" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/android-clat" path="external/android-clat" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/androidplot" path="external/androidplot" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ant-glob" path="external/ant-glob" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/antlr" path="external/antlr" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/apache-commons-math" path="external/apache-commons-math" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/apache-harmony" path="external/apache-harmony" />
+  <project groups="pdk" name="platform/external/apache-http" path="external/apache-http" />
+  <project groups="pdk" name="platform/external/apache-xml" path="external/apache-xml" />
+  <project groups="pdk" name="platform/external/archive-patcher" path="external/archive-patcher" />
+  <project name="platform/external/autotest" path="external/autotest" />
+  <project name="platform/external/avahi" path="external/avahi" />
+  <project groups="pdk" name="platform/external/bison" path="external/bison" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/blktrace" path="external/blktrace" />
+  <project groups="pdk" name="platform/external/boringssl" path="external/boringssl" />
+  <project groups="pdk" name="platform/external/bouncycastle" path="external/bouncycastle" />
+  <project groups="pdk" name="platform/external/bsdiff" path="external/bsdiff" />
+  <project groups="pdk" name="platform/external/bzip2" path="external/bzip2" />
+  <project name="platform/external/c-ares" path="external/c-ares" />
+  <project name="platform/external/caliper" path="external/caliper" />
+  <project groups="pdk" name="platform/external/cblas" path="external/cblas" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ceres-solver" path="external/ceres-solver" />
+  <project groups="pdk-fs" name="platform/external/chromium-libpac" path="external/chromium-libpac" />
+  <project groups="pdk" name="platform/external/chromium-trace" path="external/chromium-trace" />
+  <project groups="pdk" name="platform/external/chromium-webview" path="external/chromium-webview" />
+  <project groups="pdk" name="platform/external/clang" path="external/clang" />
+  <project groups="pdk-fs" name="platform/external/cmockery" path="external/cmockery" />
+  <project groups="pdk" name="platform/external/compiler-rt" path="external/compiler-rt" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/conscrypt" path="external/conscrypt" />
+  <project groups="pdk-fs" name="platform/external/crcalc" path="external/crcalc" />
+  <project name="platform/external/cros/system_api" path="external/cros/system_api" />
+  <project name="platform/external/curl" path="external/curl" />
+  <project name="platform/external/dagger2" path="external/dagger2" />
+  <project name="platform/external/dbus" path="external/dbus" />
+  <project name="platform/external/dbus-binding-generator" path="external/dbus-binding-generator" />
+  <project groups="pdk-fs" name="platform/external/deqp" path="external/deqp" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/dexmaker" path="external/dexmaker" />
+  <project name="platform/external/dhcpcd-6.8.2" path="external/dhcpcd-6.8.2" />
+  <project name="platform/external/dlmalloc" path="external/dlmalloc" />
+  <project name="platform/external/dng_sdk" path="external/dng_sdk" />
+  <project groups="pdk" name="platform/external/dnsmasq" path="external/dnsmasq" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/doclava" path="external/doclava" />
+  <project groups="pdk-fs" name="platform/external/donuts" path="external/donuts" />
+  <project groups="drm_gralloc" name="platform/external/drm_gralloc" path="external/drm_gralloc" />
+  <project groups="drm_hwcomposer" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/droiddriver" path="external/droiddriver" />
+  <project groups="pdk" name="platform/external/e2fsprogs" path="external/e2fsprogs" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/easymock" path="external/easymock" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/eclipse-basebuilder" path="external/eclipse-basebuilder" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/eclipse-windowbuilder" path="external/eclipse-windowbuilder" />
+  <project groups="pdk" name="platform/external/eigen" path="external/eigen" />
+  <project groups="pdk" name="platform/external/elfutils" path="external/elfutils" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/emma" path="external/emma" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/esd" path="external/esd" />
+  <project groups="pdk" name="platform/external/expat" path="external/expat" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/eyes-free" path="external/eyes-free" />
+  <project groups="pdk" name="platform/external/f2fs-tools" path="external/f2fs-tools" />
+  <project groups="pdk" name="platform/external/fdlibm" path="external/fdlibm" />
+  <project name="platform/external/fec" path="external/fec" />
+  <project groups="pdk-fs" name="platform/external/fio" path="external/fio" />
+  <project groups="pdk" name="platform/external/flac" path="external/flac" />
+  <project groups="pdk-fs" name="platform/external/fonttools" path="external/fonttools" />
+  <project groups="pdk" name="platform/external/freetype" path="external/freetype" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/fsck_msdos" path="external/fsck_msdos" />
+  <project name="platform/external/gemmlowp" path="external/gemmlowp" />
+  <project groups="pdk,qcom_msm8x26" name="platform/external/giflib" path="external/giflib" />
+  <project groups="pdk-fs" name="platform/external/glide" path="external/glide" />
+  <project groups="pdk" name="platform/external/gmock" path="external/gmock" />
+  <project groups="pdk" name="platform/external/google-benchmark" path="external/google-benchmark" />
+  <project groups="dragon" name="platform/external/google-breakpad" path="external/google-breakpad" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" />
+  <project groups="pdk-fs" name="platform/external/google-tv-pairing-protocol" path="external/google-tv-pairing-protocol" />
+  <project groups="pdk-fs" name="platform/external/gptfdisk" path="external/gptfdisk" />
+  <project groups="pdk" name="platform/external/gtest" path="external/gtest" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/guava" path="external/guava" />
+  <project groups="pdk" name="platform/external/guice" path="external/guice" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/hamcrest" path="external/hamcrest" />
+  <project groups="pdk,qcom_msm8x26" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" />
+  <project groups="pdk-fs" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" />
+  <project groups="pdk" name="platform/external/icu" path="external/icu" />
+  <project groups="pdk" name="platform/external/iproute2" path="external/iproute2" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ipsec-tools" path="external/ipsec-tools" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/iptables" path="external/iptables" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/iputils" path="external/iputils" />
+  <project name="platform/external/iw" path="external/iw" />
+  <project name="platform/external/jacoco" path="external/jacoco" />
+  <project groups="pdk" name="platform/external/jarjar" path="external/jarjar" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/javasqlite" path="external/javasqlite" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/javassist" path="external/javassist" />
+  <project groups="pdk" name="platform/external/jcommander" path="external/jcommander" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jdiff" path="external/jdiff" />
+  <project groups="pdk" name="platform/external/jemalloc" path="external/jemalloc" />
+  <project groups="pdk-fs" name="platform/external/jetty" path="external/jetty" />
+  <project groups="pdk" name="platform/external/jhead" path="external/jhead" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jmdns" path="external/jmdns" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jsilver" path="external/jsilver" />
+  <project groups="pdk" name="platform/external/jsmn" path="external/jsmn" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jsoncpp" path="external/jsoncpp" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/jsr305" path="external/jsr305" />
+  <project groups="pdk" name="platform/external/jsr330" path="external/jsr330" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/junit" path="external/junit" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/kernel-headers" path="external/kernel-headers" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ksoap2" path="external/ksoap2" />
+  <project groups="pdk" name="platform/external/libavc" path="external/libavc" />
+  <project name="platform/external/libbrillo" path="external/libbrillo" />
+  <project name="platform/external/libcap" path="external/libcap" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libcap-ng" path="external/libcap-ng" />
+  <project name="platform/external/libchrome" path="external/libchrome" />
+  <project groups="pdk" name="platform/external/libcxx" path="external/libcxx" />
+  <project groups="pdk" name="platform/external/libcxxabi" path="external/libcxxabi" />
+  <project name="platform/external/libdaemon" path="external/libdaemon" />
+  <project groups="pdk" name="platform/external/libdivsufsort" path="external/libdivsufsort" />
+  <project groups="pdk" name="platform/external/libdrm" path="external/libdrm" />
+  <project groups="pdk-fs" name="platform/external/libedit" path="external/libedit" />
+  <project name="platform/external/libevent" path="external/libevent" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libexif" path="external/libexif" />
+  <project groups="pdk" name="platform/external/libgsm" path="external/libgsm" />
+  <project groups="pdk-fs" name="platform/external/libhevc" path="external/libhevc" />
+  <project groups="pdk" name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" />
+  <project groups="pdk" name="platform/external/liblzf" path="external/liblzf" />
+  <project name="platform/external/libmicrohttpd" path="external/libmicrohttpd" />
+  <project groups="pdk" name="platform/external/libmpeg2" path="external/libmpeg2" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libmtp" path="external/libmtp" />
+  <project groups="pdk" name="platform/external/libnfc-nci" path="external/libnfc-nci" />
+  <project groups="pdk" name="platform/external/libnfc-nxp" path="external/libnfc-nxp" />
+  <project groups="pdk" name="platform/external/libnl" path="external/libnl" />
+  <project groups="pdk" name="platform/external/libogg" path="external/libogg" />
+  <project groups="pdk" name="platform/external/libopus" path="external/libopus" />
+  <project groups="pdk,pdk-cw-fs,pdk-fs" name="platform/external/libpcap" path="external/libpcap" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libphonenumber" path="external/libphonenumber" />
+  <project groups="pdk" name="platform/external/libpng" path="external/libpng" />
+  <project groups="pdk" name="platform/external/libselinux" path="external/libselinux" />
+  <project groups="pdk" name="platform/external/libunwind" path="external/libunwind" />
+  <project name="platform/external/libunwind_llvm" path="external/libunwind_llvm" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libusb" path="external/libusb" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libusb-compat" path="external/libusb-compat" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libutf" path="external/libutf" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libvncserver" path="external/libvncserver" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libvorbis" path="external/libvorbis" />
+  <project groups="pdk" name="platform/external/libvpx" path="external/libvpx" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/libvterm" path="external/libvterm" />
+  <project name="platform/external/libweave" path="external/libweave" />
+  <project groups="pdk-cw-fs,pdk-fs,libxml2" name="platform/external/libxml2" path="external/libxml2" />
+  <project groups="libyuv,pdk-cw-fs,pdk-fs" name="platform/external/libyuv" path="external/libyuv" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/littlemock" path="external/littlemock" />
+  <project groups="pdk-fs" name="platform/external/lld" path="external/lld" />
+  <project groups="pdk" name="platform/external/llvm" path="external/llvm" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ltrace" path="external/ltrace" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/lz4" path="external/lz4" />
+  <project groups="pdk" name="platform/external/lzma" path="external/lzma" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/markdown" path="external/markdown" />
+  <project groups="pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mesa3d" path="external/mesa3d" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/messageformat" path="external/messageformat" />
+  <project name="platform/external/minijail" path="external/minijail" />
+  <project groups="pdk" name="platform/external/mksh" path="external/mksh" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mmc-utils" path="external/mmc-utils" />
+  <project groups="pdk-fs" name="platform/external/mockftpserver" path="external/mockftpserver" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mockito" path="external/mockito" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mockwebserver" path="external/mockwebserver" />
+  <project name="platform/external/modp_b64" path="external/modp_b64" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mp4parser" path="external/mp4parser" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/mtpd" path="external/mtpd" />
+  <project groups="pdk-fs" name="platform/external/nanohttpd" path="external/nanohttpd" />
+  <project groups="pdk" name="platform/external/nanopb-c" path="external/nanopb-c" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/naver-fonts" path="external/naver-fonts" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/netcat" path="external/netcat" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/netperf" path="external/netperf" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/neven" path="external/neven" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/nfacct" path="external/nfacct" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/nist-pkits" path="external/nist-pkits" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/nist-sip" path="external/nist-sip" />
+  <project groups="pdk" name="platform/external/noto-fonts" path="external/noto-fonts" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/oauth" path="external/oauth" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/objenesis" path="external/objenesis" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/okhttp" path="external/okhttp" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/opencv" path="external/opencv" />
+  <project name="platform/external/opencv3" path="external/opencv3" />
+  <project groups="pdk-fs" name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" />
+  <project groups="pdk-fs" name="platform/external/parameter-framework" path="external/parameter-framework" />
+  <project groups="pdk" name="platform/external/pcre" path="external/pcre" />
+  <project groups="pdk" name="platform/external/pdfium" path="external/pdfium" />
+  <project name="platform/external/piex" path="external/piex" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/ppp" path="external/ppp" />
+  <project groups="pdk" name="platform/external/proguard" path="external/proguard" />
+  <project groups="pdk" name="platform/external/protobuf" path="external/protobuf" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/regex-re2" path="external/regex-re2" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/replicaisland" path="external/replicaisland" />
+  <project name="platform/external/rmi4utils" path="external/rmi4utils" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/robolectric" path="external/robolectric" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/roboto-fonts" path="external/roboto-fonts" />
+  <project name="platform/external/rootdev" path="external/rootdev" />
+  <project groups="pdk" name="platform/external/safe-iop" path="external/safe-iop" />
+  <project groups="pdk" name="platform/external/scrypt" path="external/scrypt" />
+  <project groups="pdk" name="platform/external/selinux" path="external/selinux" />
+  <project groups="pdk,qcom_msm8x26" name="platform/external/sfntly" path="external/sfntly" />
+  <project groups="pdk" name="platform/external/shflags" path="external/shflags" />
+  <project groups="pdk,qcom_msm8x26" name="platform/external/skia" path="external/skia" />
+  <project name="platform/external/sl4a" path="external/sl4a" />
+  <project groups="pdk-fs" name="platform/external/slf4j" path="external/slf4j" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/smali" path="external/smali" />
+  <project groups="pdk" name="platform/external/snakeyaml" path="external/snakeyaml" />
+  <project groups="pdk" name="platform/external/sonic" path="external/sonic" />
+  <project groups="pdk" name="platform/external/sonivox" path="external/sonivox" />
+  <project groups="pdk" name="platform/external/speex" path="external/speex" />
+  <project groups="pdk" name="platform/external/sqlite" path="external/sqlite" />
+  <project groups="pdk" name="platform/external/squashfs-tools" path="external/squashfs-tools" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/srtp" path="external/srtp" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/strace" path="external/strace" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/svox" path="external/svox" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/tagsoup" path="external/tagsoup" />
+  <project groups="pdk,pdk-cw-fs,pdk-fs" name="platform/external/tcpdump" path="external/tcpdump" />
+  <project groups="pdk" name="platform/external/testng" path="external/testng" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/timezonepicker-support" path="external/timezonepicker-support" />
+  <project groups="pdk" name="platform/external/tinyalsa" path="external/tinyalsa" />
+  <project groups="pdk" name="platform/external/tinycompress" path="external/tinycompress" />
+  <project groups="pdk" name="platform/external/tinyxml" path="external/tinyxml" />
+  <project groups="pdk" name="platform/external/tinyxml2" path="external/tinyxml2" />
+  <project name="platform/external/tlsdate" path="external/tlsdate" />
+  <project groups="pdk" name="platform/external/toybox" path="external/toybox" />
+  <project name="platform/external/tpm2" path="external/tpm2" />
+  <project groups="pdk" name="platform/external/tremolo" path="external/tremolo" />
+  <project groups="pdk" name="platform/external/unicode" path="external/unicode" />
+  <project groups="pdk" name="platform/external/v8" path="external/v8" />
+  <project groups="pdk" name="platform/external/valgrind" path="external/valgrind" />
+  <project groups="vboot" name="platform/external/vboot_reference" path="external/vboot_reference" />
+  <project groups="pdk" name="platform/external/vixl" path="external/vixl" />
+  <project groups="pdk" name="platform/external/vogar" path="external/vogar" />
+  <project name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" />
+  <project groups="pdk,qcom_msm8x26" name="platform/external/webp" path="external/webp" />
+  <project groups="pdk" name="platform/external/webrtc" path="external/webrtc" />
+  <project groups="pdk" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" />
+  <project groups="pdk" name="platform/external/xmlrpcpp" path="external/xmlrpcpp" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/xmlwriter" path="external/xmlwriter" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/xmp_toolkit" path="external/xmp_toolkit" />
+  <project groups="pdk" name="platform/external/zlib" path="external/zlib" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/zopfli" path="external/zopfli" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/external/zxing" path="external/zxing" />
+  <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" />
+  <project groups="pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" />
+  <project groups="pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" />
+  <project groups="pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/data-binding" path="frameworks/data-binding" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/ex" path="frameworks/ex" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/minikin" path="frameworks/minikin" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/ml" path="frameworks/ml" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/multidex" path="frameworks/multidex" />
+  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native" />
+  <project groups="pdk-fs" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/bluetooth" path="frameworks/opt/bluetooth" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji" />
+  <project groups="pdk-fs" name="platform/frameworks/opt/inputconnectioncommon" path="frameworks/opt/inputconnectioncommon" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon" />
+  <project groups="pdk-fs" name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" />
+  <project groups="frameworks_ims,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" />
+  <project groups="pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" />
+  <project groups="pdk" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" />
+  <project groups="pdk" name="platform/frameworks/rs" path="frameworks/rs" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/support" path="frameworks/support" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/volley" path="frameworks/volley" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/webview" path="frameworks/webview" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" />
+  <project name="platform/hardware/akm" path="hardware/akm" />
+  <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" />
+  <project groups="pdk,broadcom_wlan" name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan" />
+  <project name="platform/hardware/bsp/intel" path="hardware/bsp/intel" />
+  <project groups="pdk" name="platform/hardware/google/apf" path="hardware/google/apf" />
+  <project groups="intel" name="platform/hardware/intel/audio_media" path="hardware/intel/audio_media" />
+  <project groups="intel" name="platform/hardware/intel/bootstub" path="hardware/intel/bootstub" />
+  <project groups="intel" name="platform/hardware/intel/common/bd_prov" path="hardware/intel/common/bd_prov" />
+  <project groups="intel" name="platform/hardware/intel/common/libmix" path="hardware/intel/common/libmix" />
+  <project groups="intel" name="platform/hardware/intel/common/libstagefrighthw" path="hardware/intel/common/libstagefrighthw" />
+  <project groups="intel" name="platform/hardware/intel/common/libva" path="hardware/intel/common/libva" />
+  <project groups="intel" name="platform/hardware/intel/common/libwsbm" path="hardware/intel/common/libwsbm" />
+  <project groups="intel" name="platform/hardware/intel/common/omx-components" path="hardware/intel/common/omx-components" />
+  <project groups="intel" name="platform/hardware/intel/common/utils" path="hardware/intel/common/utils" />
+  <project groups="intel" name="platform/hardware/intel/common/wrs_omxil_core" path="hardware/intel/common/wrs_omxil_core" />
+  <project groups="intel" name="platform/hardware/intel/img/hwcomposer" path="hardware/intel/img/hwcomposer" />
+  <project groups="intel" name="platform/hardware/intel/img/psb_headers" path="hardware/intel/img/psb_headers" />
+  <project groups="intel" name="platform/hardware/intel/img/psb_video" path="hardware/intel/img/psb_video" />
+  <project groups="intel_sensors" name="platform/hardware/intel/sensors" path="hardware/intel/sensors" />
+  <project groups="invensense" name="platform/hardware/invensense" path="hardware/invensense" />
+  <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware" />
+  <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" />
+  <project groups="marvell_bt" name="platform/hardware/marvell/bt" path="hardware/marvell/bt" />
+  <project groups="qcom,qcom_audio" name="platform/hardware/qcom/audio" path="hardware/qcom/audio" />
+  <project groups="pdk" name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" />
+  <project groups="qcom" name="platform/hardware/qcom/bt" path="hardware/qcom/bt" />
+  <project groups="qcom" name="platform/hardware/qcom/camera" path="hardware/qcom/camera" />
+  <project groups="pdk,qcom,qcom_display" name="platform/hardware/qcom/display" path="hardware/qcom/display" />
+  <project groups="qcom,qcom_gps" name="platform/hardware/qcom/gps" path="hardware/qcom/gps" />
+  <project groups="qcom,qcom_keymaster" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster" />
+  <project groups="qcom" name="platform/hardware/qcom/media" path="hardware/qcom/media" />
+  <project groups="qcom_msm8960" name="platform/hardware/qcom/msm8960" path="hardware/qcom/msm8960" />
+  <project groups="qcom_msm8994" name="platform/hardware/qcom/msm8994" path="hardware/qcom/msm8994" />
+  <project groups="qcom_msm8996" name="platform/hardware/qcom/msm8996" path="hardware/qcom/msm8996" />
+  <project groups="qcom_msm8x26" name="platform/hardware/qcom/msm8x26" path="hardware/qcom/msm8x26" />
+  <project groups="qcom_msm8x27" name="platform/hardware/qcom/msm8x27" path="hardware/qcom/msm8x27" />
+  <project groups="qcom_msm8x84" name="platform/hardware/qcom/msm8x84" path="hardware/qcom/msm8x84" />
+  <project groups="qcom" name="platform/hardware/qcom/power" path="hardware/qcom/power" />
+  <project groups="qcom_wlan" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" />
+  <project groups="pdk" name="platform/hardware/ril" path="hardware/ril" />
+  <project groups="omap3" name="platform/hardware/ti/omap3" path="hardware/ti/omap3" />
+  <project groups="omap4-aah" name="platform/hardware/ti/omap4-aah" path="hardware/ti/omap4-aah" />
+  <project groups="omap4" name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx" />
+  <project groups="pdk" name="platform/libcore" path="libcore" />
+  <project groups="pdk" name="platform/libnativehelper" path="libnativehelper" />
+  <project groups="generic_fs" name="platform/ndk" path="ndk" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" />
+  <project name="platform/packages/apps/Browser2" path="packages/apps/Browser2" />
+  <project groups="pdk-fs" name="platform/packages/apps/Calculator" path="packages/apps/Calculator" />
+  <project groups="pdk-fs" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" />
+  <project groups="pdk-fs" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" />
+  <project groups="pdk-fs" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" />
+  <project groups="pdk-fs" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" />
+  <project groups="pdk-fs" name="platform/packages/apps/Contacts" path="packages/apps/Contacts" />
+  <project groups="pdk-fs" name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon" />
+  <project groups="pdk-fs" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" />
+  <project groups="pdk" name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" />
+  <project groups="pdk-fs" name="platform/packages/apps/Dialer" path="packages/apps/Dialer" />
+  <project groups="pdk-fs" name="platform/packages/apps/Email" path="packages/apps/Email" />
+  <project name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" />
+  <project groups="pdk-fs" name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" />
+  <project groups="pdk-fs" name="platform/packages/apps/Gallery" path="packages/apps/Gallery" />
+  <project groups="pdk-fs" name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" />
+  <project groups="pdk-fs" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" />
+  <project groups="pdk-fs" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" />
+  <project groups="pdk-fs" name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" />
+  <project groups="pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" />
+  <project groups="pdk-fs" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" />
+  <project groups="pdk-fs" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" />
+  <project groups="pdk-fs" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" />
+  <project groups="pdk-fs" name="platform/packages/apps/Music" path="packages/apps/Music" />
+  <project groups="pdk-fs" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" />
+  <project groups="apps_nfc,pdk-fs" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" />
+  <project groups="pdk-fs" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" />
+  <project groups="pdk-fs" name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" />
+  <project groups="pdk-fs" name="platform/packages/apps/Phone" path="packages/apps/Phone" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" />
+  <project groups="pdk-fs" name="platform/packages/apps/Protips" path="packages/apps/Protips" />
+  <project groups="pdk-fs" name="platform/packages/apps/Provision" path="packages/apps/Provision" />
+  <project groups="pdk-fs" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" />
+  <project groups="pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" />
+  <project groups="pdk-fs" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" />
+  <project groups="pdk-fs" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" />
+  <project groups="pdk-fs" name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder" />
+  <project groups="apps_stk,pdk-fs" name="platform/packages/apps/Stk" path="packages/apps/Stk" />
+  <project name="platform/packages/apps/TV" path="packages/apps/TV" />
+  <project groups="pdk-fs" name="platform/packages/apps/Tag" path="packages/apps/Tag" />
+  <project groups="pdk-fs" name="platform/packages/apps/Terminal" path="packages/apps/Terminal" />
+  <project name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" />
+  <project groups="generic_fs" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" />
+  <project groups="pdk-fs" name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" />
+  <project name="platform/packages/experimental" path="packages/experimental" />
+  <project groups="pdk-fs" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" />
+  <project groups="pdk-fs" name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn" />
+  <project groups="pdk-fs" name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider" />
+  <project groups="pdk-fs" name="platform/packages/providers/BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" />
+  <project groups="pdk-fs" name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" />
+  <project groups="pdk-fs" name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" />
+  <project groups="pdk-fs" name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" />
+  <project groups="pdk-fs" name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" />
+  <project groups="pdk-fs" name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" />
+  <project groups="pdk-fs" name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" />
+  <project groups="pdk-fs" name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView" />
+  <project groups="adp8064,pdk-cw-fs,pdk-fs" name="platform/packages/services/Car" path="packages/services/Car" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Mms" path="packages/services/Mms" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/packages/services/Telephony" path="packages/services/Telephony" />
+  <project groups="pdk-fs" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" />
+  <project groups="pdk" name="platform/pdk" path="pdk" />
+  <project name="platform/platform_testing" path="platform_testing" />
+  <project clone-depth="1" groups="pdk-fs" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" />
+  <project groups="pdk,darwin" name="platform/prebuilts/clang/darwin-x86/host/3.6" path="prebuilts/clang/darwin-x86/host/3.6" />
+  <project groups="pdk,darwin" name="platform/prebuilts/clang/host/darwin-x86" path="prebuilts/clang/host/darwin-x86" />
+  <project groups="pdk" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" />
+  <project groups="pdk,linux" name="platform/prebuilts/clang/linux-x86/host/3.6" path="prebuilts/clang/linux-x86/host/3.6" />
+  <project groups="pdk-fs" name="platform/prebuilts/deqp" path="prebuilts/deqp" />
+  <project groups="pdk-fs" name="platform/prebuilts/devtools" path="prebuilts/devtools" />
+  <project groups="pdk" name="platform/prebuilts/eclipse" path="prebuilts/eclipse" />
+  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <project clone-depth="1" groups="pdk,darwin,armi,device,sprd" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+  <project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+  <project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+  <project groups="pdk,darwin,mips" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
+  <project groups="pdk,darwin,x86" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <project clone-depth="1" groups="pdk,linux,arm,device,sprd" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+  <project groups="pdk,linux,arm" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8" />
+  <project groups="pdk,linux" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" />
+  <project groups="pdk-fs" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
+  <project groups="pdk,linux,mips" name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" />
+  <project groups="pdk,linux,x86" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
+  <project groups="darwin" name="platform/prebuilts/gdb/darwin-x86" path="prebuilts/gdb/darwin-x86" />
+  <project groups="linux" name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" />
+  <project groups="darwin,tradefed" name="platform/prebuilts/go/darwin-x86" path="prebuilts/go/darwin-x86" />
+  <project groups="linux,tradefed" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" />
+  <project groups="pdk" name="platform/prebuilts/misc" path="prebuilts/misc" />
+  <project groups="pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" />
+  <project groups="darwin,pdk,tradefed" name="platform/prebuilts/ninja/darwin-x86" path="prebuilts/ninja/darwin-x86" />
+  <project groups="linux,pdk,tradefed" name="platform/prebuilts/ninja/linux-x86" path="prebuilts/ninja/linux-x86" />
+  <project groups="darwin,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/darwin-x86/2.7.5" path="prebuilts/python/darwin-x86/2.7.5" />
+  <project groups="linux,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" />
+  <project clone-depth="1" groups="pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" />
+  <project groups="pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" />
+  <project groups="pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/sdk" path="sdk" />
+  <project groups="pdk" name="platform/system/bt" path="system/bt" revision="sprd-7.0" />
+  <project groups="pdk" name="platform/system/ca-certificates" path="system/ca-certificates" />
+  <project name="platform/system/connectivity/apmanager" path="system/connectivity/apmanager" />
+  <project name="platform/system/connectivity/dhcp_client" path="system/connectivity/dhcp_client" />
+  <project name="platform/system/connectivity/shill" path="system/connectivity/shill" />
+  <project groups="pdk" name="platform/system/core" path="system/core" />
+  <project groups="pdk" name="platform/system/extras" path="system/extras" />
+  <project name="platform/system/firewalld" path="system/firewalld" />
+  <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper" />
+  <project groups="pdk" name="platform/system/keymaster" path="system/keymaster" />
+  <project groups="pdk" name="platform/system/media" path="system/media" />
+  <project name="platform/system/nativepower" path="system/nativepower" />
+  <project groups="pdk" name="platform/system/netd" path="system/netd" />
+  <project name="platform/system/nvram" path="system/nvram" />
+  <project groups="pdk" name="platform/system/security" path="system/security" />
+  <project groups="pdk" name="platform/system/sepolicy" path="system/sepolicy" />
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/system/tools/aidl" path="system/tools/aidl" />
+  <project name="platform/system/tpm" path="system/tpm" />
+  <project name="platform/system/update_engine" path="system/update_engine" />
+  <project groups="pdk" name="platform/system/vold" path="system/vold" />
+  <project name="platform/system/weaved" path="system/weaved" />
+  <project name="platform/system/webservd" path="system/webservd" />
+  <project groups="tools" name="platform/tools/external/fat32lib" path="tools/external/fat32lib" />
+  <project groups="tools" name="platform/tools/external/gradle" path="tools/external/gradle" />
+  <project name="platform/tools/test/connectivity" path="tools/test/connectivity" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/bsp" path="vendor/sprd/proprietories-source/sprdtrusty/external/lk/platform/sprd" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/platform/external/boringssl" path="vendor/sprd/proprietories-source/sprdtrusty/external/openssl" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/platform/system/gatekeeper" path="vendor/sprd/proprietories-source/sprdtrusty/system/gatekeeper" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/platform/system/keymaster" path="vendor/sprd/proprietories-source/sprdtrusty/system/keymaster" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/app/crypto" path="vendor/sprd/proprietories-source/sprdtrusty/app/crypto" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/app/gatekeeper" path="vendor/sprd/proprietories-source/sprdtrusty/app/gatekeeper" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/app/kernelbootcp" path="vendor/sprd/proprietories-source/sprdtrusty/app/kernelbootcp" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/app/keymaster" path="vendor/sprd/proprietories-source/sprdtrusty/app/keymaster" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/app/production" path="vendor/sprd/proprietories-source/sprdtrusty/app/production" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/app/sample" path="vendor/sprd/proprietories-source/sprdtrusty/app/sample" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/app/storage" path="vendor/sprd/proprietories-source/sprdtrusty/app/storage" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/device/arm/generic-arm64" path="vendor/sprd/proprietories-source/sprdtrusty/device/arm/generic-arm64" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/device/arm/sprd" path="vendor/sprd/proprietories-source/sprdtrusty/device/arm/sprd" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/device/arm/vexpress-a15" path="vendor/sprd/proprietories-source/sprdtrusty/device/arm/vexpress-a15" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/external/headers" path="vendor/sprd/proprietories-source/sprdtrusty/external/headers" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/lib" path="vendor/sprd/proprietories-source/sprdtrusty/lib" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/lk/common" path="vendor/sprd/proprietories-source/sprdtrusty/external/lk" >
+    <copyfile dest="vendor/sprd/proprietories-source/sprdtrusty/makefile" src="makefile"/>
+  </project>
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/lk/trusty" path="vendor/sprd/proprietories-source/sprdtrusty/lk/trusty" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/vendor/google/aosp" path="vendor/sprd/proprietories-source/sprdtrusty/vendor/google/aosp" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/trusty/trusty/vendor/sprd/build" path="vendor/sprd/proprietories-source/sprdtrusty/vendor/sprd/build" >
+    <copyfile dest="vendor/sprd/proprietories-source/sprdtrusty/lk_inc.mk" src="lk_inc.mk"/>
+    <copyfile dest="vendor/sprd/proprietories-source/sprdtrusty/Android.mk" src="Android.mk"/>
+  </project>
+  <project groups="sprd,sprd_trusty" name="sprd_security/trusty/trusty/vendor/sprd/modules" path="vendor/sprd/proprietories-source/sprdtrusty/vendor/sprd/modules" />
+  <project groups="sprd,sprd_trusty,idh" name="sprd_security/vmm/s-vmm" path="vendor/sprd/proprietories-source/s-vmm" />
+  <project name="toolchain/binutils" />
+  <project groups="device,sprd" name="u-boot15" />
+  <project groups="device,sprd" name="u-boot64" />
+  <project clone-depth="1" groups="sprd,tools,device" name="vendor/sprd/build" />
+  <project groups="device,sprd,sprd_graphic,driver" name="vendor/sprd/external/drivers/gpu" />
+  <project groups="device,sprd,tools,linaro" name="vendor/sprd/external/gcc-linaro" path="prebuilts/gcc/linaro-x86/aarch64/gcc-linaro-4.8" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/external/iperf" />
+  <project groups="device,sprd" name="vendor/sprd/external/kernel-headers" />
+  <project groups="device,sprd,tools" name="vendor/sprd/external/tools-build" />
+  <project groups="sprd,tools" name="vendor/sprd/external/tools-coding-style" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/feature_configs" />
+  <project groups="sprd,sprd_media,hal" name="vendor/sprd/modules/audio" />
+  <project groups="device,sprd,sprd_graphic" name="vendor/sprd/modules/dpu" />
+  <project groups="sprd,sprd_gps,hal" name="vendor/sprd/modules/gps" revision="sprd-7.0" />
+  <project groups="device,sprd,sprd_graphic,hal" name="vendor/sprd/modules/gsp" />
+  <project groups="device,sprd,sprd_graphic,hal" name="vendor/sprd/modules/hwcomposer" />
+  <project groups="sprd,sprd_tele,hal" name="vendor/sprd/modules/libatci" />
+  <project groups="sprd,sprd_camera,hal" name="vendor/sprd/modules/libcamera" />
+  <project groups="sprd,sprd_media,hal" name="vendor/sprd/modules/libmemion" />
+  <project groups="device,sprd,hal" name="vendor/sprd/modules/lights" />
+  <project groups="sprd,sprd_media,hal" name="vendor/sprd/modules/media" />
+  <project groups="sprd,sprd_power,hal" name="vendor/sprd/modules/power" />
+  <project groups="sprd,sprd_tele,hal" name="vendor/sprd/modules/radiointeractor" />
+  <project groups="sprd,sprd_media,hal" name="vendor/sprd/modules/resampler" />
+  <project groups="device,sprd,hal" name="vendor/sprd/modules/sensors" />
+  <project groups="sprd,sprd_security" name="vendor/sprd/modules/tos" />
+  <project groups="sprd,sprd_wcn,hal" name="vendor/sprd/modules/wcn" revision="sprd-7.0" />
+  <project groups="sprd,sprd_wlan,hal" name="vendor/sprd/modules/wlan" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/ccsa/configs" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/ccsa/prebuilts" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/cmcc/configs" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/cmcc/packages/apps/10086cn" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/cmcc/packages/apps/MyFavorites" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/cmcc/packages/apps/OpManager" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/cmcc/packages/apps/Provision2" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/cmcc/plugins/CmccCarrierPlugin" />
+  <project groups="sprd,sprd_apps,idhdel" name="vendor/sprd/operator/cmcc/prebuilts" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/ctcc/configs" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/ctcc/plugins/CtccCarrierPlugin" />
+  <project groups="sprd,sprd_apps,idhdel" name="vendor/sprd/operator/ctcc/prebuilts" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/cucc/configs" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/cucc/plugins/CuccCarrierPlugin" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/cucc/plugins/CuccUsimNotifier" />
+  <project groups="sprd,sprd_apps,idhdel" name="vendor/sprd/operator/cucc/prebuilts" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/orange/plugins/OrangeCarrierPlugin" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/reliance/configs" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/reliance/plugins/LowBatteryUtils" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/reliance/plugins/RelianceCarrierPlugin" />
+  <project groups="sprd,sprd_apps,idhdel" name="vendor/sprd/operator/reliance/prebuilts" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/telcel/configs" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/telcel/plugins/TelcelCarrierPlugin" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/operator/vodafone/plugins/VodafoneCarrierPlugin" />
+  <project groups="sprd,sprd_security,idhdel" name="vendor/sprd/partner/aliyun-tos" />
+  <project groups="sprd,sprd_wlan,hal" name="vendor/sprd/partner/brcm" />
+  <project groups="sprd,sprd_security" name="vendor/sprd/partner/chipone" />
+  <project groups="sprd,sprd_security" name="vendor/sprd/partner/microarray" />
+  <project groups="sprd,sprd_lego,sprd_apps,idhdel" name="vendor/sprd/partner/prebuilt_apps" />
+  <project groups="sprd,hal,3rdp" name="vendor/sprd/partner/samsung" />
+  <project groups="sprd,sprd_security" name="vendor/sprd/partner/watchdata" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/external/svox" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/external/zxing" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/frameworks/av" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/frameworks/base" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/frameworks/ex" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/frameworks/native" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/frameworks/opt/chips" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/frameworks/opt/colorpicker" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/frameworks/opt/datetimepicker" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/frameworks/opt/photoviewer" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/frameworks/opt/setupwizard" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/frameworks/opt/telephony" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/frameworks/opt/timezonepicker" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/frameworks/support" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/frameworks/webview" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/AppClone" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/platform/packages/apps/AppSecurity" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/AudioProfile" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/apps/Bluetooth" />
+  <project groups="sprd,sprd_debug,idhdel" name="vendor/sprd/platform/packages/apps/BluetoothReverse" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/Calculator" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/Calendar" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/CallFirewall" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/CallSettings" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/apps/CarrierConfig" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/CbCustomSetting" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/CellBroadcastReceiver" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/CertInstaller" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/apps/DeskClock" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/Dialer" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/DreamCamera2" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/DreamFMRadio" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/DreamGallery2" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/DreamSoundRecorder" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/EmergencyInfo" />
+  <project groups="sprd,sprd_debug,idhdel" name="vendor/sprd/platform/packages/apps/EngineerInternal" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/EngineerMode" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/ExactCalculator" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/FileExplorer" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/FotaUpdate" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/GeneralSecurity" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/HTMLViewer" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/KeyChain" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/Launcher3" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/ManagedProvisioning" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/Messaging" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/Music" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/MusicFX" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/NewGallery2" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/NewMusic" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/apps/Nfc" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/Note" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/Omacp" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/PackageInstaller" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/apps/PhoneCommon" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/Plugger" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/Protips" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/QuickCamera" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/RedStoneOta" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/RegionConfig" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SGPS" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/apps/Settings" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SimLanguages" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SmilPlay" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SprdAppBackup" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SprdBrowser" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SprdContacts" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SprdContactsCommon" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SprdEmail" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SprdMobileTracker" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SprdQuickSearchBox" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SprdSlt" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SprdStk" />
+  <project groups="sprd,sprd_debug,idhdel" name="vendor/sprd/platform/packages/apps/SprdWifiP2pShare" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/SystemUpdate" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/TV" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/apps/Tag" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/apps/TvSettings" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/UplmnSettings" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/ValidationTools" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/apps/VoiceTrigger" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/inputmethods/LatinIME" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/providers/CalendarProvider" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/providers/DownloadProvider" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/providers/MediaProvider" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/providers/SprdContactsProvider" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/providers/TelephonyProvider" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/providers/TvProvider" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/providers/UserDictionaryProvider" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/screensavers/Basic" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/screensavers/PhotoTable" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/services/FdnService" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/platform/packages/services/SmartCardService" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/services/Telecomm" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/packages/services/Telephony" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/wallpapers/LivePicker" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/platform/system/vold" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/Sample" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/frameworks/av/drm" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/frameworks/base/packages/DocumentsUI" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/frameworks/base/packages/Keyguard" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/frameworks/base/packages/SettingsProvider" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/frameworks/base/packages/SystemUI" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/frameworks/opt/telephony" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/CallFirewall" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/CallSettings" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/Contacts" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/ContactsCommon" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/DeskClock" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/Dialer" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/DreamCamera2" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/DreamGallery2" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/FileExplorer" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/Launcher3" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/Music" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/Settings" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/SprdBrowser" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/SprdEmail" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/apps/SprdStk" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/providers/ContactsProvider" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/providers/DownloadProvider" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/services/Telecomm" />
+  <project groups="sprd,sprd_lego" name="vendor/sprd/plugins/packages/services/Telephony" />
+  <project groups="device,sprd" name="vendor/sprd/proprietories" />
+  <project groups="sprd,sprd_security,idh" name="vendor/sprd/proprietories-source/CustomizedNetManage" />
+  <project groups="sprd,sprd_debug,idh" name="vendor/sprd/proprietories-source/SprdCommLogService" />
+  <project groups="sprd,data,idh" name="vendor/sprd/proprietories-source/UdpDataInspect" />
+  <project groups="sprd,sprd_factory" name="vendor/sprd/proprietories-source/autotest" />
+  <project groups="sprd,sprd_factory,idh" name="vendor/sprd/proprietories-source/calibration_init" />
+  <project groups="sprd,sprd_power,sprd_apps" name="vendor/sprd/proprietories-source/charge" />
+  <project groups="sprd,sprd_wlan,hal" name="vendor/sprd/proprietories-source/connmgr" />
+  <project groups="sprd,sprd_tele,idh" name="vendor/sprd/proprietories-source/csvt" />
+  <project groups="sprd,sprd_lego,idh" name="vendor/sprd/proprietories-source/dataLogDaemon" />
+  <project groups="sprd,sprd_tele" name="vendor/sprd/proprietories-source/dhcp6" />
+  <project groups="sprd,sprd_wlan,hal" name="vendor/sprd/proprietories-source/download" />
+  <project groups="sprd,sprd_factory" name="vendor/sprd/proprietories-source/engmode" />
+  <project groups="device,sprd,idh" name="vendor/sprd/proprietories-source/exfat" />
+  <project groups="sprd,sprd_debug,tools" name="vendor/sprd/proprietories-source/ext_data" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/proprietories-source/factorytest" />
+  <project groups="sprd,sprd_tele,idh" name="vendor/sprd/proprietories-source/ims" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/proprietories-source/iodebug" />
+  <project groups="sprd,sprd_modem,idh" name="vendor/sprd/proprietories-source/iqfeed" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/proprietories-source/libbm" />
+  <project groups="device,sprd,sprd_graphic,hal" name="vendor/sprd/proprietories-source/libgpu" />
+  <project groups="sprd,sprd_memory,idh" name="vendor/sprd/proprietories-source/lmfs" />
+  <project groups="sprd,sprd_modem" name="vendor/sprd/proprietories-source/modem_control" />
+  <project groups="sprd,sprd_tele,hal,idh" name="vendor/sprd/proprietories-source/modemd" />
+  <project groups="sprd,sprd_tele,sprd_apps,idh" name="vendor/sprd/proprietories-source/modemnotifier" />
+  <project groups="sprd,sprd_modem,idh" name="vendor/sprd/proprietories-source/nvitem" />
+  <project groups="sprd,sprd_security,tools,device" name="vendor/sprd/proprietories-source/packimage_scripts" />
+  <project groups="sprd,sprd_security,tools,device" name="vendor/sprd/proprietories-source/packimage_source" />
+  <project groups="sprd,tools,idh" name="vendor/sprd/proprietories-source/pathwrapper" />
+  <project groups="sprd,sprd_tele,hal,idh" name="vendor/sprd/proprietories-source/phoneserver" />
+  <project groups="sprd,sprd_tele" name="vendor/sprd/proprietories-source/radvd" />
+  <project groups="sprd,sprd_modem,idh" name="vendor/sprd/proprietories-source/refnotify" />
+  <project groups="sprd,sprd_tele,hal,idh" name="vendor/sprd/proprietories-source/ril" />
+  <project groups="sprd,sprd_modem" name="vendor/sprd/proprietories-source/slogmodem" />
+  <project groups="sprd,sprd_media,idh" name="vendor/sprd/proprietories-source/sprd_codecs" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/proprietories-source/sprd_debug" />
+  <project groups="sprd,sprd_security,idh" name="vendor/sprd/proprietories-source/sprd_secure_boot_tool" />
+  <project groups="sprd,sprd_security,idh" name="vendor/sprd/proprietories-source/sprd_verify" />
+  <project groups="sprd,sprd_power,deamon,idh" name="vendor/sprd/proprietories-source/thermald" />
+  <project groups="sprd,sprd_security,hal" name="vendor/sprd/proprietories-source/trustzone" />
+  <project groups="sprd,data,hal,idh" name="vendor/sprd/proprietories-source/volte_engine" />
+  <project groups="sprd,sprd_debug,idh" name="vendor/sprd/proprietories-source/ylog" />
+  <project groups="sprd,sprd_res" name="vendor/sprd/resource/cdrom" />
+  <project groups="sprd,sprd_lego,sprd_apps" name="vendor/sprd/sprd-webview" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/telephony-res" revision="sprd" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/DDRScan" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/ISPtool" />
+  <project groups="sprd,tools,sprd_debug" name="vendor/sprd/tools/MUITools" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/aprd" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/benchmark" />
+  <project groups="device,sprd" name="vendor/sprd/tools/board_configure_tool" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/busybox" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/cost_mem" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/crash" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/eng_app" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/lookat" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/memtester" />
+  <project groups="sprd,sprd_apps" name="vendor/sprd/tools/ota" />
+  <project groups="sprd,sprd_factory" name="vendor/sprd/tools/phasecheckserver" />
+  <project groups="sprd,sprd_debug" name="vendor/sprd/tools/root_cmd_service" />
+  <project groups="sprd,sprd_debug,idh" name="vendor/sprd/tools/srt" />
+  <project groups="device,sprd" name="vendor/sprd/tools/swap" />
+  <project groups="sprd,sprd_debug,idhdel" name="vendor/sprd/tools/usage_count" />
+  <project groups="sprd,idhdel" name="vendor/widevine" />
+  <project groups="sprd,sprd_security,idh" name="whale_security/ATF/arm-trusted-firmware" path="vendor/sprd/proprietories-source/arm-trusted-firmware" />
+  <project groups="sprd,sprd_security,idh" name="whale_security/ATF/arm-trusted-firmware-1.3" path="vendor/sprd/proprietories-source/arm-trusted-firmware-1.3" />
+
+  <project path="vendor/sprd/sprd_vowifi" name="vendor/sprd/sprd_vowifi" groups="sprd,sprd_vowifi,idh" revision="sprd-7.0" />
+  <project path="vendor/sprd/proprietories-source/ims_bridged" name="vendor/sprd/proprietories-source/ims_bridged" groups="sprd,sprd_vowifi,idh" revision="sprd-7.0" />
+  <project path="vendor/sprd/proprietories-source/ImsCM" name="vendor/sprd/proprietories-source/ImsCM" groups="sprd,sprd_vowifi,idh" revision="sprd-7.0" />
+  <project groups="sprd,sprd_lego,sprd_language" name="vendor/sprd/platform/packages/providers/BlockedNumberProvider" />
+
+</manifest>
